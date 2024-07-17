@@ -5,7 +5,7 @@ describe('Buttonshift assignment', () => {
   it('Sign Up', () => {
     cy.visit('https://dev-fe.buttonshift.com')
     cy.contains('Sign up').click()
-    cy.get("input[placeholder=\"Enter email address\"]").type('Rosp@yopmail.com').type("{enter}")
+    cy.get("input[placeholder=\"Enter email address\"]").type('Johnse@yopmail.com').type("{enter}")
     cy.get("input[placeholder=\"Enter password\"]").type('f@yopmail.com').type("{enter}")
     cy.get("input[placeholder=\"Retype password\"]").type('f@yopmail.com').type("{enter}")
     cy.get(`[aria-label="Please enter OTP character 1"]`).click().type('1')
